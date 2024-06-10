@@ -60,6 +60,10 @@ body{
     border-radius: 20px ;
 }
 
+.button :hover{
+    cursor: pointer;
+}
+
 
 /* Now we will style the upper division of the landing page */
 
