@@ -6,11 +6,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Figtree";
+    /* overflow: hidden; */
 
 }
 body{
     background-color:black;
+   
     
+}
+html, body {
+    height: 100%;
+    /* overflow: hidden;  */
 }
 
 
@@ -68,13 +74,14 @@ body{
 /* Now we will style the upper division of the landing page */
 
 .upper{
-    margin: 5px auto 5px;
+    margin: 0px auto 5px;
     padding: 10px;
     width: 100vw;
     height: 85vh;
     max-height: 100%;
     display: flex;
     justify-content: space-between;
+    /* overflow: hidden; */
     /* align-items: center; */
 
 }
@@ -85,12 +92,13 @@ body{
     
     /* width: 22vw; */
     width: 300px;
-    max-width: 100%;
-   /* position: fixed; */
+    
+   position: fixed;
     max-height: 100%;
-    /* top: 10px;
+     top: 10px;
     bottom: 0;
-    overflow: auto; */
+    overflow: auto; 
+    /* z-index: 1; */
     /* background-color: rgb(18, 18, 18); */
     
     
@@ -256,11 +264,15 @@ body{
 
 .right{
     /* flex: 3; */
-    width: 950px;
+    width: calc(100%-300px);
     height: 520px;
     background-color: rgb(18, 18, 18);
     margin: 0px 10px 0px 10px;
+    margin-left:280px;
     border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
     
 }
 
@@ -275,6 +287,7 @@ body{
     justify-content: space-between;
     align-items: center;
     border-radius: 10px 10px 0px 0px;
+    /* position: fixed; */
 
 }
 
@@ -340,11 +353,22 @@ body{
     overflow-y: auto; 
 }
 
-.right .mainsection::-webkit-scrollbar {
+/* Playing with the scroll bar */
+
+.upper .right .mainsection::-webkit-scrollbar {
     width: 10px; /* Width of the scrollbar */
 }
-
-.right .mainsection::-webkit-scrollbar-thumb {
+.upper .right .mainsection::-webkit-scrollbar-thumb {
     background-color: rgb(47, 47, 47); /* Color of the scrollbar */
     border-radius: 10px; /* Roundness of the scrollbar */
+    border: 2px solid transparent; /* Create space around the scrollbar thumb */
+    background-clip: content-box; /* Make the border visible */
+}
+
+.upper .right .mainsection::-webkit-scrollbar-track {
+    background-color: orange; /* Background color of the scrollbar track */
+}
+
+.upper .right .mainsection::-webkit-scrollbar {
+    height: 0px; /* Height of the horizontal scrollbar */
 }
