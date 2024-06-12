@@ -404,8 +404,8 @@ html, body {
 
 .firstMainNav{
     padding: 10px;
-    margin: 10px;
-    width: 850px;
+    margin: 10px 10px 0px 10px;
+    width: 890px;
     
     display: flex;
     justify-content: space-between;
@@ -436,7 +436,7 @@ html, body {
 .artists{
     height: 220px;
     width: 200px;
-    margin: 30px;
+    margin: 5px auto 5px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -451,13 +451,13 @@ html, body {
 } */
 
 .photo{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
 }
 .artistPhoto{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 100px;
 }
 
