@@ -289,8 +289,9 @@ html, body {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px 10px 0px 0px;
-    backdrop-filter: blur(10px);
+    backdrop-filter:  blur(2px);
     /* position: fixed; */
+    z-index: 0;
 
 }
 
@@ -360,11 +361,15 @@ html, body {
 /* Designing of the nav bar is done */
 /* Now we will design the main section oof spotify */
 .mainsection{
+    /* position: relative; */
+    margin-top: 80px;
     width: 950px;
     height: 700px;
     background: linear-gradient(rgb(47, 47, 47),black);
     overflow-y: auto; 
+    z-index: 0;
 }
+
 
 /* Playing with the scroll bar */
 
@@ -384,4 +389,83 @@ html, body {
 
 .upper .right .mainsection::-webkit-scrollbar {
     height: 0px; /* Height of the horizontal scrollbar */
+}
+
+
+
+/* Designing the main section */
+
+.firstMainOuter{
+    margin: 10px;
+   
+
+
+}
+
+.firstMainNav{
+    padding: 10px;
+    margin: 10px;
+    width: 850px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: 60px;
+}
+
+.outerHeading{
+    font-size: 20px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+.showall{
+    font-size: 13px;
+    color: rgb(167, 167, 167);
+    font-weight: 500;
+}
+
+
+.artistList{
+    color: whitesmoke;
+    display: flex;
+}
+
+.artists{
+    height: 220px;
+    width: 200px;
+    margin: 30px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    /* border: 2px solid red; */
+}
+
+/* .artists :hover{
+    background-color: aqua;
+    cursor: pointer;
+} */
+
+.photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+.artistPhoto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.artistNamePara{
+    font-size: 15px;
+    
+}
+.artistDesc{
+    font-size: 12px;
+    color: rgb(167, 167, 167);
 }
