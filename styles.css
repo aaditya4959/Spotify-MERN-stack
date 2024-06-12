@@ -277,9 +277,11 @@ html, body {
 }
 
 .nav{
+    position: fixed;
     padding: 20px;
     height: 50px;
     min-height: 75px;
+    width: calc(100% - 300px);
     min-width: 400px;
     background-color: rgb(18, 18, 18);
     display: flex;
@@ -287,6 +289,7 @@ html, body {
     justify-content: space-between;
     align-items: center;
     border-radius: 10px 10px 0px 0px;
+    backdrop-filter: blur(10px);
     /* position: fixed; */
 
 }
@@ -323,6 +326,8 @@ html, body {
     padding: 10px;
 }
 
+
+
 #logup{
 
     min-width: 100px;
@@ -343,12 +348,20 @@ html, body {
     font-weight: 600;
 }
 
+.useraccount #logup:hover, .useraccount #login:hover{
+    cursor: pointer;
+    font-weight: 700;
+    transition: all ease 0.5s;
+}
+
+
+
 
 /* Designing of the nav bar is done */
 /* Now we will design the main section oof spotify */
 .mainsection{
     width: 950px;
-    height: 520px;
+    height: 700px;
     background: linear-gradient(rgb(47, 47, 47),black);
     overflow-y: auto; 
 }
