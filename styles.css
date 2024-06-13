@@ -98,10 +98,15 @@ html, body {
      top: 10px;
     bottom: 0;
     overflow: auto; 
+
     /* z-index: 1; */
     /* background-color: rgb(18, 18, 18); */
     
     
+}
+
+.left::-webkit-scrollbar{
+    display: none;
 }
 
 /* Designing the into part on the left side */
@@ -274,6 +279,9 @@ html, body {
     overflow-x: hidden;
     position: relative;
     
+}
+.right::-webkit-scrollbar{
+    display: none;
 }
 
 .nav{
